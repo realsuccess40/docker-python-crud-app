@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <meta name="description" content="Explore extraordinary world records and discover something remarkable.">
+    <title>Record Atlas — Extraordinary, by the numbers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Record Atlas home">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>record<span class="brand-light">atlas</span></span>
+        </a>
+        <span class="topbar-note"><span class="live-dot"></span> A world of remarkable</span>
+      </header>
+
+      <main>
+        <section class="intro">
+          <div class="eyebrow"><span class="eyebrow-line"></span> THE EXTRAORDINARY, BY THE NUMBERS</div>
+          <h1>Some things are<br>hard to <span>believe.</span></h1>
+          <p class="intro-copy">Explore a curated collection of Guinness World Records snapshots, from superhuman feats to wonderfully weird firsts that make you stop and say, “wait, really?”</p>
+        </section>
+
+        <section class="discovery" aria-label="Discover a record">
+          <div class="discovery-topline">
+            <span class="section-label"><span class="sparkle">✳</span> YOUR NEXT RABBIT HOLE</span>
+            <span class="discovery-hint">A little surprise, picked just for you</span>
+          </div>
+          <div class="featured-record" id="featured-record" aria-live="polite">
+            <div class="featured-icon" id="featured-icon" aria-hidden="true">✦</div>
+            <div class="featured-copy">
+              <span class="featured-category" id="featured-category">READY WHEN YOU ARE</span>
+              <h2 id="featured-title">Find your first fascinating fact.</h2>
+              <p id="featured-description">One tap, one remarkable record. Go on, surprise yourself.</p>
+              <div class="featured-meta" id="featured-meta"></div>
+            </div>
+            <button class="surprise-button" id="surprise-button" type="button">
+              <span aria-hidden="true">⤨</span> Surprise me
+            </button>
+          </div>
+        </section>
+
+        <section class="explore" aria-labelledby="explore-heading">
+          <div class="explore-heading">
+            <div>
+              <span class="section-label muted-label">EXPLORE THE COLLECTION</span>
+              <h2 id="explore-heading">Find something <span>extraordinary.</span></h2>
+            </div>
+            <span class="result-count" id="result-count" aria-live="polite"></span>
+          </div>
+          <div class="search-controls">
+            <label class="search-box">
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <span class="visually-hidden">Search records</span>
+              <input id="search-input" type="search" placeholder="Try “fastest”, “animals”, “pizza”..." autocomplete="off">
+              <kbd>/</kbd>
+            </label>
+            <label class="category-select-label">
+              <span class="visually-hidden">Filter by category</span>
+              <select id="category-select">
+                <option value="">All categories</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true">⌄</span>
+            </label>
+          </div>
+          <div class="record-grid" id="record-grid" aria-live="polite"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <span class="empty-icon" aria-hidden="true">⌕</span>
+            <h3>No records found</h3>
+            <p>Try a different search or choose another category.</p>
+            <button id="clear-search" class="text-button" type="button">Clear filters</button>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-brand"><span class="brand-mark small-mark" aria-hidden="true">R</span> recordatlas</div>
+        <p>A little wonder, one record at a time.</p>
+        <span class="footer-note">Unofficial record snapshots; listings may change over time.</span>
+      </footer>
+    </div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
